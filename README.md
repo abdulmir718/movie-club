@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# MovieClub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description
+-----------------------------
 
-## Available Scripts
+My app is called Movie Club. It is for those who spend more time looking for "the right" movie, than actually watching movies. With my app, users can view popular movies, as well as search for specific movie titles. After selecting a particular movie, the user will be able to read a summary of the movie, as well as view it's release date, rating, genre, and runtime.
 
-In the project directory, you can run:
+Wireframes
+-------------------------------
+<img width="911" alt="Screen Shot 2021-04-26 at 9 21 05 AM" src="https://user-images.githubusercontent.com/81011771/116098695-e399fd80-a670-11eb-9f86-72e91c5d6fbd.png">
 
-### `npm start`
+<img width="914" alt="Screen Shot 2021-04-26 at 9 21 24 AM" src="https://user-images.githubusercontent.com/81011771/116098779-f280b000-a670-11eb-81a5-2c9392866746.png">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<img width="912" alt="Screen Shot 2021-04-26 at 9 21 41 AM" src="https://user-images.githubusercontent.com/81011771/116098814-fad8eb00-a670-11eb-90e8-938ff2658ccc.png">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+MVP User Stories
+------------------------------
+MVP User Stories
+- As a user, I want to see a listing of popular movies displayed on the home page, so that I can persue a few option without even needing to search
+- As a user, I'd like to search for particlar movies I'm interested in.
+- As a user, I'd like to click on each individual movie and get more details about said movie.
+- As a user, I'd like to be able to easily navigate through the Movie Club app on a mobile device.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Post MVP Stretch Goals
+- As a user, I would like to be able to search for movies by genre 
+- As a user, I would like to be able to view a trailer after clicking on a movie title.
+- As a user, I'd like to to see which streaming platform I can view each movie on.
 
-### `npm run build`
+API
+-----------------------------
+The Movie DB API Documentation: https://developers.themoviedb.org/3/getting-started/introduction
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Component Hiearchy 
+------------------------------
+<img width="923" alt="Screen Shot 2021-04-26 at 9 31 55 AM" src="https://user-images.githubusercontent.com/81011771/116100113-40e27e80-a672-11eb-9cfd-2c1ad947e50c.png">
