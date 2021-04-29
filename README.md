@@ -1,4 +1,4 @@
-# MovieClub
+ # Movie Club
 
 Description
 -----------------------------
