@@ -1,5 +1,6 @@
 body {
     background-color:rgb(104, 10, 38);
+    color: white;
 }
 
 .title {
@@ -18,4 +19,21 @@ body {
 
 .head {
     margin: 30px;
+}
+
+.movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 50px;
+    
+}
+
+.movieTitle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 11px;
+    margin-bottom: 15px;
 }

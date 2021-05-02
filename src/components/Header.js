@@ -32,7 +32,7 @@ function Header({setMovies}) {
     <div>
       <header className="head">
         <h1 className="title">Movie Club</h1>
-        <form className="search" onSubmit={ handleForm }>
+        <form className="search" onSubmit={handleForm}>
           <input
             className="searchBar"
             type="text"
@@ -43,7 +43,7 @@ function Header({setMovies}) {
           <button>Search</button>
         </form>
       </header>
-      <h2>{submitValue}</h2>
+      <h2>Search Results For: "{submitValue}"</h2>
     </div>
   );
 }
