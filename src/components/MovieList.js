@@ -21,6 +21,7 @@ function MovieList() {
       }, [setMovies, featuredApi]);
     return (
         <div>
+            <h2>Featured Movies</h2>
               {movies &&
         movies.map((movie) => <MovieItem  key = {movie.id} movie={movie} id = {movie.id} /> )}
         </div>

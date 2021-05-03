@@ -16,7 +16,6 @@ function App() {
           <Header setMovies={setMovies} />
         </div>
 
-        <h2>Featured Movies</h2>
 
         <div className="movieList">
           <Route

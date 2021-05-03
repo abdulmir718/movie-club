@@ -43,10 +43,9 @@ function Header({setMovies}) {
             onChange={handleOnChange}
             value={searchValue}
           />
-          <button>Search</button>
+          {/* <button>Search</button> */}
         </form>
       </header>
-      <h2>Search Results For: "{submitValue}"</h2>
     </div>
   );
 }
