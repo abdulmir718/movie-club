@@ -10,6 +10,7 @@ function Header({setMovies}) {
     const [submitValue, setSubmitValue]= useState("");
 
     useEffect(() => {
+      if(submitValue !== ""){
         fetch(searchApi + submitValue)
         .then((res) => {
           console.log(res);
@@ -17,7 +18,9 @@ function Header({setMovies}) {
         })
         .then(data => {setMovies(data.results)
         console.log(data.results)})
-      }, [submitValue, setMovies])
+      
+      }}, [submitValue, setMovies])
+
       
       function handleForm (event) {
         event.preventDefault();
@@ -34,9 +37,9 @@ function Header({setMovies}) {
         <h1 className="title">Movie Club</h1>
         <form className="search" onSubmit={handleForm}>
           <input
-            className="searchBar"
-            type="text"
-            placeholder="Search Movies..."
+            className= "searchBar"
+            type= "text"
+            placeholder= "Search Movies..."
             onChange={handleOnChange}
             value={searchValue}
           />

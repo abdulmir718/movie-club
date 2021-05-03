@@ -11,12 +11,13 @@ const featuredApi = `https://api.themoviedb.org/3/trending/all/day?api_key=${pro
 
 function App() {
   const [movies, setMovies] = useState([]);
-  console.log("movies", movies)
 
   useEffect(() => {
+    console.log("THIS IS URL",featuredApi);
     fetch(featuredApi)
     .then((res) => res.json())
     .then((data) => {
+      console.log("THIS IS DATA",data)
       setMovies(data.results);
     })
     .catch(console.error);
@@ -35,13 +36,14 @@ function App() {
       <h2>Featured Movies</h2>
       
       <div className = "movieList">
+        <Route exact path="/" component={MovieList} />
         {movies &&
-        movies.map((movie) => <MovieList  key = {movie.id} {...movie} id = {movie.id} /> )}
+        movies.map((movie) => <MovieList  key = {movie.id} movie={movie} id = {movie.id} /> )}
       </div>
-        
+
       <div className = "Movie">
-        <Route exact path = "/Movie/:id" 
-        render = {(routerProps) => <Movie movies = {movies} match = {routerProps.match}/>} />
+        <Route exact path = "/movie/:id" 
+        render = {(routerProps) => <Movie setMovies = {setMovies} movies = {movies} match = {routerProps.match}/>} />
        </div>
       
 

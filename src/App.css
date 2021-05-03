@@ -1,14 +1,15 @@
 body {
-    background-color:rgb(104, 10, 38);
+    background-color:#001d3d;
     color: white;
 }
 
-.title {
+/* .title {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
-}
+
+} */
 
 .search {
     display: flex;
@@ -18,7 +19,11 @@ body {
 }
 
 .head {
-    margin: 30px;
+    margin-bottom: 50px;
+    background-color: #000814;
+    padding: 40px;
+    width: 100%;
+    
 }
 
 .movieList {
@@ -36,4 +41,15 @@ body {
     flex-wrap: wrap;
     font-size: 11px;
     margin-bottom: 15px;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search {
+    display: flex;
+    align-content: flex-end;
+    margin-right: 79px;
 }
