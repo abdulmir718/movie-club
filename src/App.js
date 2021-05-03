@@ -1,54 +1,44 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Route } from "react-router-dom";
 import Header from "./components/Header";
 import MovieList from "./components/MovieList";
 import Movie from "./components/Movie";
-import "./App.css"
-
-const featuredApi = `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_MOVIE_CLUB_API_KEY}`;
-
-
+import "./App.css";
+import { MovieContext } from "./MovieContext";
 
 function App() {
   const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    console.log("THIS IS URL",featuredApi);
-    fetch(featuredApi)
-    .then((res) => res.json())
-    .then((data) => {
-      console.log("THIS IS DATA",data)
-      setMovies(data.results);
-    })
-    .catch(console.error);
-  }, []);
-
-  
-
+  const context = { movies, setMovies };
   return (
-    <div className="App">
+    <MovieContext.Provider value={{context}}>
+      <div className="App">
+        <div className="header">
+          <Header setMovies={setMovies} />
+        </div>
 
-      <div className = "header">
-        <Header setMovies = {setMovies}/>
+        <h2>Featured Movies</h2>
+
+        <div className="movieList">
+          <Route
+            exact
+            path="/"
+            component={MovieList}
+          />
+        </div>
+
+        <div className="Movie">
+          <Route
+            exact
+            path="/movie/:id"
+            render={(routerProps) => (
+              <Movie
+                match={routerProps.match}
+              />
+            )}
+          />
+        </div>
       </div>
-
-      
-      <h2>Featured Movies</h2>
-      
-      <div className = "movieList">
-        <Route exact path="/" component={MovieList} />
-        {movies &&
-        movies.map((movie) => <MovieList  key = {movie.id} movie={movie} id = {movie.id} /> )}
-      </div>
-
-      <div className = "Movie">
-        <Route exact path = "/movie/:id" 
-        render = {(routerProps) => <Movie setMovies = {setMovies} movies = {movies} match = {routerProps.match}/>} />
-       </div>
-      
-
-      </div>
-    
+    </MovieContext.Provider>
   );
 }
 
