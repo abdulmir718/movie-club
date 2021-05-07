@@ -10,7 +10,7 @@ function MovieItem({movie}) {
             <Link to = {`/movie/${id}`} key = {id}>
                 <img src = {imageUrl + poster_path} alt = {title} />
                 <div className = "movieTitle">
-                <h2>{title || name}</h2>
+                <h2 className = "movieName">{title || name}</h2>
                 </div>
             </Link>
             

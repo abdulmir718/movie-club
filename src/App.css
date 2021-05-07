@@ -1,5 +1,5 @@
 body {
-    background-color:#001d3d;
+    background-color:#2f2fa2;
     color: white;
 }
 
@@ -16,7 +16,7 @@ body {
 
 .head {
     margin-bottom: 50px;
-    background-color: #000814;
+    background-color: #242582;
     padding: .1px;
     
 }
@@ -38,14 +38,15 @@ body {
 }
 
 .searchBar {
-    background-color:#164ea39c;
-    color: white;
+    background-color:#f64c72;
+    color:white;
     font-weight: bold;
     padding: 11px;
     border-radius: 20px;
     border-color: rgba(7, 7, 7, 0.358);
     
 }
+
 
 .movieItem {
     display: flex;
@@ -59,4 +60,20 @@ body {
 
 img {
     max-width: 100%;
+}
+
+.genreItem {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    /* font-size: 16px; */
+}
+
+.movieLink {
+    color: white;
+    text-decoration: none;
+}
+
+.movieName {
+    text-decoration: none;
 }

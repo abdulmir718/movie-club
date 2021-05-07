@@ -43,7 +43,6 @@ function Header({setMovies}) {
             onChange={handleOnChange}
             value={searchValue}
           />
-          {/* <button>Search</button> */}
         </form>
       </header>
     </div>

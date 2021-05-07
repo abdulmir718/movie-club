@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Route } from "react-router-dom";
-import Header from "./components/Header";
+import Search from "./components/Search";
 import MovieList from "./components/MovieList";
 import Movie from "./components/Movie";
 import "./App.css";
@@ -13,7 +13,7 @@ function App() {
     <MovieContext.Provider value={{context}}>
       <div className="App">
         <div className="header">
-          <Header setMovies={setMovies} />
+          <Search setMovies={setMovies} />
         </div>
 
 
