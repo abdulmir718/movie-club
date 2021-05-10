@@ -35,4 +35,5 @@ The Movie DB API Documentation: https://developers.themoviedb.org/3/getting-star
 
 Component Hiearchy 
 ------------------------------
-<img width="923" alt="Screen Shot 2021-04-26 at 9 31 55 AM" src="https://user-images.githubusercontent.com/81011771/116100113-40e27e80-a672-11eb-9cfd-2c1ad947e50c.png">
+<img width="766" alt="Screen Shot 2021-05-10 at 2 02 08 AM" src="https://user-images.githubusercontent.com/81011771/117618568-c155b480-b133-11eb-877d-169bc9d3136f.png">
+
