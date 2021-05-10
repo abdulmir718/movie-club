@@ -37,15 +37,25 @@ function Movie({match}) {
     console.log("movie details", renderGenres)
 
     return (
-        <div>
-            <h1>{movieDetails.title || movieDetails.name}</h1>
+        <div className = "mainMovieContainer">
+            <h1 className = "movieDeetsHeader">Movie Details</h1>
+            
+            <div className = "movieCon">
+
+            <div className = "movieImageContainer">
             <img src={img + movieDetails.poster_path} alt = {movieDetails.title} />
+            </div>
+
+            <div className = "movieDetails">
+            <h2>Title: {movieDetails.title || movieDetails.name}</h2>
             <h2>Release Date: {movieDetails.release_date}</h2>
             {renderGenres ? <h2>Genre: {renderGenres}</h2>: null}
             <h2>Overview: {movieDetails.overview}</h2>
             <h2>Rating: {movieDetails.vote_average}/10</h2>
             <h2>Runtime: {movieDetails.runtime} Minutes</h2>
             <h2><a className = "movieLink" href={movieDetails.homepage}> Watch Trailer/Movie Here</a></h2>
+            </div>
+        </div>
         </div>
     );
 }
