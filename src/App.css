@@ -8,8 +8,7 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-right: 12px;
-    margin-bottom: 7px;
-       
+    margin-bottom: 7px;  
 }
 
 .searchBar {
@@ -18,20 +17,16 @@ body {
     font-weight: bold;
     padding: 11px;
     border-radius: 20px;
-    border-color: rgba(7, 7, 7, 0.358);
-    
+    border-color: rgba(7, 7, 7, 0.358); 
 }
 ::placeholder { 
     color: white;
-
   }
 
 .head {
     margin-bottom: 50px;
     background-color: #970330;
     padding: .1px;
-    
-    
 }
 
 .title {
@@ -44,12 +39,10 @@ body {
 
 .mainHead {
     display: flex;
-
 }
 
 .logo {
-    width: 100px;
-    /* padding-top: 20px; */
+    width: 100px; 
 }
 
 .movieItem {
@@ -59,7 +52,6 @@ body {
     width: 300px;
     margin: 1rem;
     background-color: #970330;
-    
 }
 
 .movieItemTitle {
@@ -69,7 +61,6 @@ body {
     text-align: center;
     text-decoration: none;
     color: white;
-
 }
 
 a {
@@ -108,7 +99,6 @@ img {
     margin-bottom: 5px;
     display: flex;
     flex-direction: row;
-    /* font-size: 16px; */
 }
 
 .movieDeetsHeader {
@@ -135,16 +125,13 @@ img {
         justify-content: center;
         margin-top: 20px;
         margin-bottom: 15px;
-        margin-left: 20px;
-           
+        margin-left: 20px; 
     }
 
     .title {
         font-size: 50px;
         display: flex;
         justify-content: center;
-        /* margin-left: 10px;
-        margin-bottom: 0px; */
         text-decoration: none;
         color: white;
     }
@@ -153,11 +140,9 @@ img {
         display: inline-flex;
         flex-direction: row;
         justify-content: center;
-        /* flex-wrap: wrap; */
         width: 300px;
         margin-left: 2.2rem;
-        background-color: #970330;
-        
+        background-color: #970330; 
     }
 }
 

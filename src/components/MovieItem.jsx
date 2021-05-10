@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import {Link} from "react-router-dom";
 import "../App.css";
 
 function MovieItem({movie}) {
@@ -16,8 +16,6 @@ function MovieItem({movie}) {
                 <h2>{title || name}</h2>
                 </div>
             </Link>
-            
-
         </div>
         
     );
