@@ -20,7 +20,7 @@ function MovieList() {
     return (
       <div>
         <div className = "movieListContainer">
-              {movies &&
+              {movies.length > 1 &&
               movies.map((movie) => <MovieItem  key = {movie.id} movie={movie} id = {movie.id} /> )}
         </div>
       </div>

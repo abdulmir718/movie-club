@@ -9,8 +9,10 @@ import { MovieContext } from "./MovieContext";
 function App() {
   const [movies, setMovies] = useState([]);
   const context = { movies, setMovies };
+  
   return (
     <MovieContext.Provider value={{context}}>
+      
       <div className="App">
         <div className="header">
           <Search setMovies={setMovies} />
